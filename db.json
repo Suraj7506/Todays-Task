@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "id": 1,
+      "firstName": "deepak",
+      "lastName": "pandey",
+      "email": "deepak@gmil.com",
+      "mobile": "6543217890",
+      "salary": "$10"
+    },
+    {
+      "id": 2,
+      "firstName": "Radhika",
+      "lastName": "Reddy",
+      "email": "Radika@gmail.com",
+      "mobile": "9789654326",
+      "salary": "$23"
+    },
+    {
+      "id": 3,
+      "firstName": "Rajesh",
+      "lastName": "nuja",
+      "email": "Rajesh@gmail.com",
+      "mobile": "678654426",
+      "salary": "$39"
+    },
+    {
+      "fullname": "Suraj Shukla",
+      "email": "suraj@gmail.com",
+      "password": "12345",
+      "mobile": 7698765432,
+      "id": 4
+    },
+    {
+      "fullname": "Anuj Tiwari",
+      "email": "anuj@gmail.com",
+      "password": "12345",
+      "mobile": 456789034,
+      "id": 6
+    },
+    {
+      "fullname": "kasim",
+      "email": "kasim@gmail.com",
+      "password": "12345",
+      "mobile": 7738738015,
+      "id": 8
+    },
+    {
+      "fullname": "  suraj shukla",
+      "email": "suraj11@gmail.com",
+      "password": "12345",
+      "mobile": 8888888890,
+      "id": 9
+    },
+    {
+      "fullname": "shukla",
+      "email": "suraj16@gmail.com",
+      "password": "12345",
+      "mobile": 1234567890,
+      "id": 11
+    },
+    {
+      "fullname": "rrfrfr",
+      "email": "h@gmi.com",
+      "password": "888",
+      "mobile": 567565,
+      "id": 13
+    },
+    {
+      "email": "suraj123@gmail.com",
+      "password": "suraj@786",
+      "fullname": "suraj shukla",
+      "date": "",
+      "number": 8888,
+      "id": 14
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

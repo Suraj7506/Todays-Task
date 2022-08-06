@@ -1,0 +1,45 @@
+.card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 350px;
+    left: 100%;
+    
+    transform: translate(-50%, -50%);
+    background-color: rgb(228, 206, 7);
+    color: black;
+}
+
+.card h1,
+h6 {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+#hello{
+    padding: 5px;
+    width: 200px;
+}
+
+#hey{
+    margin-bottom: 20px;
+}
+
+.container{
+    padding-bottom: 20px;
+    margin-bottom: 700px ;
+}
+
+
+.bottom{
+    font-size: 15px;
+}
+
+.role{
+    padding: 5px;
+    width: 200px;
+}

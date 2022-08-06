@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice';
+
+//DOB property will store a reference variable the data type of 
+//this property is going to be element Ref
+
+
+//Use of Viewchild Decorator it assigns a property with a reference to an html element 
+// or to a component or a directive
+// Using Viewchild decorator we can also get access to a component or a directive
+
+//   @ViewChild('dobInput') dateOfBirth!: ElementRef;
+// @ViewChild('ageInput') age!: ElementRef;
+
+// calculateAge(){
+//   let birthYear = new Date(this.dateOfBirth.nativeElement.value).getFullYear();
+//   let currentYear = new Date().getFullYear();
+//   let age = currentYear - birthYear;
+//   this.age.nativeElement.value = age;
+
+//   // console.log(this.dateOfBirth);
+//   // console.log(this.age);
+
+// }
+
 }

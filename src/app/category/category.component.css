@@ -1,0 +1,133 @@
+#image1{
+
+    margin-left: 100px;
+    width: 200px;
+				height: 200px;
+				border-radius: 190%;
+
+}
+
+#image2{
+    margin-left: 110px;
+}
+
+#image3{
+
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+}
+
+#image4{
+
+    margin-left: 160px;
+    margin-bottom: 50px;
+    width: 200px;
+				height: 200px;
+				border-radius: 190%;
+
+}
+
+
+    /* margin-left: 20px;
+    font-size: 20px; */
+
+    #span1 {
+        --b: 0.1em;   /* the thickness of the line */
+        --c: #1095c1; /* the color */
+        
+        color: #0000;
+        padding-block: var(--b);
+        background: 
+          linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+          linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+        margin-left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        border: 2px solid yellow
+      }
+      #span1:hover {
+        --_p: 100%;
+        --_s: .3s;
+      }
+
+
+
+
+#span2 {
+        --b: 0.1em;   /* the thickness of the line */
+        --c: #1095c1; /* the color */
+        
+        color: #0000;
+        padding-block: var(--b);
+        background: 
+          linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+          linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+        margin-left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      #span2:hover {
+        --_p: 100%;
+        --_s: .3s;
+      }
+
+      #span3 {
+        --b: 0.1em;   /* the thickness of the line */
+        --c: #1095c1; /* the color */
+        
+        color: #0000;
+        padding-block: var(--b);
+        background: 
+          linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+          linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+        margin-left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      #span3:hover {
+        --_p: 100%;
+        --_s: .3s;
+      }
+
+      #span4 {
+        --b: 0.1em;   /* the thickness of the line */
+        --c: #1095c1; /* the color */
+        
+        color: #0000;
+        padding-block: var(--b);
+        background: 
+          linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+          linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+        -webkit-background-clip: text,padding-box;
+                background-clip: text,padding-box;
+        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+        margin-left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        border: 2px solid yellow;
+      }
+      #span4:hover {
+        --_p: 100%;
+        --_s: .3s;
+      }
+
+      h2{
+        margin-left: 250px;
+        
+        border-radius: 10px;
+        border-right: 100px;
+      }
+
+      #butt{
+        margin-left: 430px;
+      }

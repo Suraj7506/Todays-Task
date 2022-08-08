@@ -6,26 +6,48 @@
   <label> Age: </label>
   <input type="text" #ageInput>
 </div> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="hello">
+  <div class="hello">
+   
+    <ul class="navbar-nav mr-auto">
+      &nbsp;
+      &nbsp;
+      <li *ngIf="!isLoggedIn()" class="nav-item active">
+        <a class="nav-link nj" routerLink="/login">Login</a>
+      </li>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="https://nimapinfotech.com/">Nimap Infotech</a>
-    </div>
-    <ul class="nav navbar-nav" id="hello">
-      <li><a routerLink="/category">Category</a></li>
-      <li><a routerLink="/product">Product</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="/register" ><span class="glyphicon glyphicon-user"></span> Register</a></li>
-      <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li *ngIf="isLoggedIn()" class="nav-item active">
+        <a class="nav-link res" routerLink="/register"><strong>Register</strong></a>
+      </li>
+
+      &nbsp;
+      &nbsp;
+      
+      <li *ngIf="isLoggedIn()" class="nav-item active">
+        <a class="nav-link log"  (click)="logout()" ><strong>Logout</strong></a>
+      </li>
+
+
+      <li *ngIf="isLoggedIn()" class="nav-item active">
+        <a class="nav-link" routerLink="/category" id="hii" >Category</a>
+      </li>
+      <li *ngIf="isLoggedIn()" class="nav-item">
+        <a class="nav-link" routerLink="/product" id="hi" >Product</a>
+      </li>
+
+      <li class="nav-item">
+        <img [src]="hello" id="img" (click)="refresh()" class="btn">
+        <span id="mart">Fresh Mart</span>
+      </li>
 
     </ul>
   </div>
+  
 </nav>
   
-
+<!-- <div *ngFor="let ele of list; index as i; first as f; last as l">
+  <div>{{ele}} index: {{i}} <span *ngIf="f"> First</span><span *ngIf="l"> Last</span></div>
+</div> -->
 
 
 <router-outlet></router-outlet>

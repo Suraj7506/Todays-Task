@@ -1,0 +1,33 @@
+table, th, td {
+    border:2px solid black;
+    
+    margin-left: 250px;
+    margin-right: 500px;
+    font-size: 19px;
+    padding: 3px;
+
+
+  }
+
+  h2{
+    margin-left: 320px;
+    border: 3px solid green;
+    background-color: powderblue;
+  }
+
+  h4{
+    margin-left: 320px;
+    border: 3px solid red;
+    background-color: yellowgreen;
+    font-size: 30px;
+  }
+
+  p{
+    border: 3px solid blue;
+    font-size: 20px;
+    color: red;
+
+  }
+  .logo{
+    margin-left:25%;
+  }

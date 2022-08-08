@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
+  img1= 'assets/dryfruits.jpg'
+  img2='assets/fruits.jpg'
+  img3='assets/proteins.jpg'
+  img4='assets/vegetables.jpg'
+
   constructor() { }
 
   ngOnInit(): void {

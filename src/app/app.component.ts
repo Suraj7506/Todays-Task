@@ -1,4 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { MyapiService } from './myapp/myapi.service';
+import { Router } from '@angular/router';
+import { BehaviorSubject, Subject } from 'rxjs';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +12,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice';
+  hello= 'assets/lions.png';
 
+
+  // list = [1,2,3,4,5];
+  
 //DOB property will store a reference variable the data type of 
 //this property is going to be element Ref
 
@@ -29,5 +38,24 @@ export class AppComponent {
 //   // console.log(this.age);
 
 // }
+
+constructor(
+  private service: MyapiService,
+  private router  : Router
+){
+
+}
+
+isLoggedIn(){
+ return this.service.isLoggedIn()
+}
+logout(){
+  localStorage.removeItem('userDetails');
+  this.router.navigate(['login']);
+}
+refresh(){
+  this.router.navigate(['category']);
+
+}
 
 }

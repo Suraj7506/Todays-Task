@@ -80,9 +80,28 @@
       "date": "",
       "number": 8888,
       "id": 14
+    },
+    {
+      "email": "anuj@gmail.com",
+      "password": "123",
+      "fullname": "suraj",
+      "date": "",
+      "number": 456,
+      "id": 15
+    },
+    {
+      "email": "anuj123@gmail.com",
+      "password": "123",
+      "fullname": "shukla",
+      "number": 123,
+      "id": 18
     }
   ],
   "profile": {
     "name": "typicode"
+  },
+  "token": {
+    "token": "hghghgh",
+    "role": "admin"
   }
 }

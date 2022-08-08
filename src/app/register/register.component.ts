@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegisterComponent implements OnInit {
 
-  public registerForm! : FormGroup
+  public signUpForm! : FormGroup
   age: any;
   public totalItem : number = 0;
   public searchTerm !: string;
@@ -20,12 +20,13 @@ export class RegisterComponent implements OnInit {
   constructor(private formBuilder : FormBuilder,private http : HttpClient, private router : Router) { }
 
   ngOnInit(): void {
-    this.registerForm = this.formBuilder.group({
+    this.signUpForm = this.formBuilder.group({
       email:['',Validators.required],
       password:['', Validators.required],
       fullname:['', Validators.required],
-      date:['',Validators.required],
-      number:['',Validators.required]
+      number:['',Validators.required],
+      
+      
     
     
     })
@@ -42,20 +43,12 @@ export class RegisterComponent implements OnInit {
 
   }
 
-  @ViewChild('dobInput') dateOfBirth!: ElementRef;
-
-  calculateAge(){
-      let birthYear = new Date(this.dateOfBirth.nativeElement.value).getFullYear();
-      let currentYear = new Date().getFullYear();
-      let age = currentYear - birthYear;
-     this.age.nativeElement.value = age;
-  }
 
   signUp(){
-    this.http.post<any>("http://localhost:3000/signupUsers",this.registerForm.value)
+    this.http.post<any>("http://localhost:3000/signupUsers",this.signUpForm.value)
    .subscribe(res=>{
      alert("Signup Successfull");
-     this.registerForm.reset();
+     this.signUpForm.reset();
      this.router.navigate(['login']);
    },err=>{
      alert("Something Went Wrong")
